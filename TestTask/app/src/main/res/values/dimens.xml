@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shadow_height">11dp</dimen>
+    <dimen name="item_border_paddings">10dp</dimen>
+    <dimen name="mainPadding">5dp</dimen>
+</resources>

@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainDark</item>
+        <item name="colorPrimaryDark">@color/mainDark</item>
+        <item name="colorAccent">@color/mainWhite</item>
+        <item name="colorControlNormal">@color/mainWhite</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="snackColor">@color/smackBackgroundDark</item>
+        <item name="android:actionMenuTextColor">@color/mainWhite</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/mainWhite</item>
+        <item name="colorPrimaryDark">@color/mainLight</item>
+        <item name="colorAccent">@color/mainDark</item>
+        <item name="colorControlNormal">@color/mainDark</item>
+
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="snackColor">@color/smackBackgroundLight</item>
+        <item name="android:actionMenuTextColor">@color/mainDark</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+
+    </style>
+
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/mainRed</item>
+        <item name="colorPrimaryDark">@color/mainWhite</item>
+        <item name="colorAccent">@color/mainDark</item>
+        <item name="colorControlNormal">@color/mainWhite</item>
+
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="snackColor">@color/smackBackgroundRed</item>
+        <item name="android:actionMenuTextColor">@color/mainWhite</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+
+    </style>
+</resources>

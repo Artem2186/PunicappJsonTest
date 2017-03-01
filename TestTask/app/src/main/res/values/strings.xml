@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="stubErrorMessage">Error</string>
+    <string name="themes_menu">Themes</string>
+    <string name="app_theme_light">Light</string>
+    <string name="app_theme_dark">Dark</string>
+    <string name="app_theme_red">Red</string>
+    <string name="update">Update</string>
+</resources>
