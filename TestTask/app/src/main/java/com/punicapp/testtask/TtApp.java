@@ -4,8 +4,10 @@ import android.app.Application;
 import android.content.Context;
 
 import com.punicapp.testtask.api.ServicesManager;
+import com.punicapp.testtask.utils.picasso.OkHttp3Downloader;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
+import com.squareup.picasso.Picasso;
 
 import java.security.SecureRandom;
 
@@ -17,6 +19,7 @@ public class TtApp extends Application {
     private static Context context;
     private static Bus eventBus;
     private static ServicesManager servicesManager;
+    private static Picasso picasso;
 
     @Override
     public void onCreate() {
@@ -27,6 +30,7 @@ public class TtApp extends Application {
         servicesManager = new ServicesManager();
         servicesManager.init(eventBus, context);
         realmInit();
+        initPicasso();
     }
 
     public static Context getContext() {
@@ -49,4 +53,15 @@ public class TtApp extends Application {
                 .build();
         Realm.setDefaultConfiguration(realmConfiguration);
     }
+
+    public static Picasso getPicasso() {
+        return picasso;
+    }
+
+    public void initPicasso() {
+        Picasso.Builder picassoBuilder = new Picasso.Builder(context);
+        picassoBuilder.downloader(new OkHttp3Downloader.Builder(context).build());
+        picasso = picassoBuilder.build();
+    }
+
 }

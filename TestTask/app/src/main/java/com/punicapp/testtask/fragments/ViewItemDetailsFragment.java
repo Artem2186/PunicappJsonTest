@@ -37,10 +37,8 @@ public class ViewItemDetailsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        initPicasso();
-
         this.position = getArguments().getInt(POSITION_ARG);
+        picasso = TtApp.getPicasso();
 
         rootView = inflater.inflate(R.layout.view_details_fr, container, false);
         headerView = (TextView) rootView.findViewById(R.id.details_header);
@@ -49,11 +47,6 @@ public class ViewItemDetailsFragment extends Fragment {
         return rootView;
     }
 
-    private void initPicasso() {
-        Picasso.Builder picassoBuilder = new Picasso.Builder(getActivity());
-        picassoBuilder.downloader(new OkHttp3Downloader.Builder(getActivity()).build());
-        picasso = picassoBuilder.build();
-    }
 
     @Subscribe
     public void onReceiveDataToDisplay(AfterGetDataForDetailDisplayingEvent event) {
