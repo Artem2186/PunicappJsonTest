@@ -129,7 +129,6 @@ public class ViewDataAsListActivity extends AppRootActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.action_apptheme_light:
                 AppThemeUtils.changeToTheme(this, AppThemeUtils.AppThemes.Light);
