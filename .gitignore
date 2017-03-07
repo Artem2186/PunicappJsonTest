@@ -1,0 +1,5 @@
+*.orig
+*.properties
+*/gradle/wrapper/*
+*gradlew*
+*.idea*

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="mainDark">#ff303030</color>
+    <color name="mainWhite">#FFFFFF</color>
+    <color name="mainLight">#ececec</color>
+    <color name="mainGray">#aaaaaa</color>
+    <color name="mainRed">#c34654</color>
+    <color name="mainRedDark">#8e2e39</color>
+
+    <color name="smackBackgroundDark">#b30000</color>
+    <color name="smackBackgroundLight">#ff4d4d</color>
+    <color name="smackBackgroundBlue">#4692c3</color>
+
+</resources>

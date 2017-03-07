@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainDark</item>
+        <item name="colorPrimaryDark">@color/mainDark</item>
+        <item name="colorAccent">@color/mainWhite</item>
+        <item name="colorControlNormal">@color/mainWhite</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="snackColor">@color/smackBackgroundDark</item>
+        <item name="android:actionMenuTextColor">@color/mainWhite</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+        <item name="updateImg">@drawable/ic_popup_sync_dark</item>
+
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/mainWhite</item>
+        <item name="colorPrimaryDark">@color/mainLight</item>
+        <item name="colorAccent">@color/mainDark</item>
+        <item name="colorControlNormal">@color/mainDark</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="snackColor">@color/smackBackgroundLight</item>
+        <item name="android:actionMenuTextColor">@color/mainDark</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+        <item name="updateImg">@drawable/ic_popup_sync_light</item>
+
+    </style>
+
+    <style name="AppThemeRed" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/mainRed</item>
+        <item name="colorPrimaryDark">@color/mainWhite</item>
+        <item name="colorAccent">@color/smackBackgroundBlue</item>
+        <item name="colorControlNormal">@color/mainWhite</item>
+
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="snackColor">@color/smackBackgroundBlue</item>
+        <item name="android:actionMenuTextColor">@color/mainWhite</item>
+        <item name="actionMenuTextColor">@color/mainWhite</item>
+        <item name="updateImg">@drawable/ic_popup_sync_dark</item>
+        <item name="actionBarTheme">@style/RedActionBar</item>
+    </style>
+
+    <style name="RedActionBar" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">@color/mainWhite</item>
+    </style>
+</resources>

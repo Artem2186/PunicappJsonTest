@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.punicapp.testtask.activities.ViewDataAsListActivity">
+
+    <item
+        android:id="@+id/action_update"
+        android:title="@string/update"
+        android:icon="?attr/updateImg"
+
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_apptheme_dark"
+        android:title="@string/app_theme_dark"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_apptheme_light"
+        android:title="@string/app_theme_light"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_apptheme_red"
+        android:title="@string/app_theme_red"
+        app:showAsAction="never" />
+</menu>
